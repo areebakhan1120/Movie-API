@@ -1,5 +1,14 @@
 
-  const searchTerm = "";
+function openMenu () {
+  document.body.classList += " menu--open"
+}
+
+function closeMenu () {
+document.body.classList.remove('menu--open')
+}
+
+
+const searchTerm = "";
 
    const moviesListEl = document.querySelector(".movies__list")
 const searchInput = document.getElementById("search__input")
@@ -168,6 +177,8 @@ async function showMovieDetails(imdbID) {
   }
 
 }
+
+
 
 
 
