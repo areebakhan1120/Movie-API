@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineFlix</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/07cd991237.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="header">
+          <div class="navbar">
+            <figure class="logo__wrapper">
+              <i class="fa-solid fa-film fa-bounce"></i>
+              <img src="/assets/CineFlix.png" alt="" class="logo__img" />
+            </figure>
+            <ul class="nav__links">
+              <li>
+                <a href="#" class="nav__link"
+                  ><span class="maroon">Home</span></a
+                >
+              </li>
+              <li><a href="#" class="nav__link">Movies</a></li>
+              <li><a href="#" class="nav__link">TV Series</a></li>
+            </ul>
+          </div>
+          <div class="overlay">
+            <img
+              src="/assets/Screenshot 2025-10-09 223825.png"
+              class="overlay__img"
+              alt=""
+            />
+          </div>
+          <div class="search">
+            <h1>Explore The Guide</h1>
+            <div class="input__wrapper">
+              <input
+                type="text"
+                placeholder="Find Your Flix"
+                id="search__input"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass search__icon"
+                id="search__btn"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section id="movies">
+        <div class="movies__container">
+          <div class="results__container" id="results">
+            <div class="movies__list">
+              <div class="movie"></div>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL -->
+        <div id="movieModal" class="modal">
+          <span class="close__modal">&times;</span>
+          <div class="modal__details" id="modalDetails">
+            <div class="modal__info"></div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="/index.js" defer></script>
+  </body>
+</html>
