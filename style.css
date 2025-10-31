@@ -55,6 +55,7 @@ a {
 text-decoration: none;
   transition: all 300ms ease;
   cursor: pointer;
+  list-style: none;
 }
 
 a:hover {
